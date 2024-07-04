@@ -1,7 +1,6 @@
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
+import 'package:movie_app/view/bottombar/test.dart';
+import '../bottombar/bottomBar.dart';
 import 'IndicatorState.dart';
 
 class MyApp extends StatelessWidget {
@@ -67,9 +66,18 @@ class Home extends StatelessWidget {
             height: 200, // You can adjust the height according to your needs
             child: CarouselWithIndicatorDemo(),
           ),
-          Text("noice",style: TextStyle(color: Colors.white),)
+          Scrollbar(child: SingleChildScrollView(
+            child: Row(
+              children: [
+
+              ],
+            ),
+          ))
+
         ],
+
       ),
+      bottomNavigationBar: bot(),
     );
   }
 }
