@@ -11,10 +11,11 @@ class Bottom extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Obx(
             () => ResponsiveNavigationBar(
-              borderRadius: 0,
+              borderRadius: 20,
           selectedIndex: navigationController.selectedIndex.value,
           onTabChange: navigationController.changeTab,
-          textStyle: const TextStyle(
+              backgroundColor: Color.fromARGB(100, 44, 38, 38),
+              textStyle: const TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,
           ),
