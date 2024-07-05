@@ -1,4 +1,4 @@
-# TiketBooking app
+# TicketBooking app
 
 A new Flutter project.
 
